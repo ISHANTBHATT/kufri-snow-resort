@@ -141,7 +141,7 @@ function Homecontainer() {
       <p className="text-2xl md:text-3xl  lg:text-4xl text-center  font-medium">
         From the moment you step foot on our grounds,
         <br className="hidden md:block" />
-        you'll be enveloped in a world of refined
+        you&apos;ll be enveloped in a world of refined
         <br className="hidden md:block" />
         elegance and warm hospitality.
       </p>

@@ -10,7 +10,7 @@ const Gallery = () => {
           Better every day
         </span>
         <h3 className="text-4xl md:text-6xl font-semibold text-textcolor font-cormorant">
-          Let's change it up a bit
+          Let&apos;s change it up a bit
         </h3>
         <p className="text-lg md:text-xl text-textcolor my-4 md:my-6 font-cormorant font-semibold">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam nobis in
