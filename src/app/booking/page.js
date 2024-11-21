@@ -146,7 +146,7 @@ import "react-date-range/dist/styles.css";
 import "react-date-range/dist/theme/default.css";
 import RoomSuggestion from "../components/RoomSuggestion";
 
-function page() {
+function Page() {
   const [bookingData, setBookingData] = useState({});
   const [dateRange, setDateRange] = useState([
     {
@@ -309,4 +309,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;
