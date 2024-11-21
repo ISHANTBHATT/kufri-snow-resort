@@ -363,7 +363,7 @@ export default function Component() {
   };
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-8">
+    <div className="max-w-6xl mx-auto px-4 py-32">
       <h1 className="text-5xl font-semibold mb-6 text-textcolor font-cormorant">
         Photo Tour
       </h1>

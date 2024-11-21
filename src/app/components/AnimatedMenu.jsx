@@ -123,7 +123,7 @@ export default function AnimatedMenu() {
       <button
         onClick={() => setIsOpen(true)}
         // className="fixed top-4 left-4 z-20 p-3 bg-gradient-to-r from-purple-500 to-purple-700 rounded-lg shadow-lg"
-        className="fixed top-4 left-4 z-20 px-3"
+        className="fixed top-4 left-4 z-20 p-3"
       >
         <RiMenu2Line className="w-6 h-6" />
       </button>
