@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
 const Gallery = () => {
@@ -19,9 +20,11 @@ const Gallery = () => {
         {/* <button className="bg-indigo-500 text-white font-medium py-2 px-4 rounded transition-all hover:bg-indigo-600 active:scale-95">
           Find a class
         </button> */}
-        <button className="border-2  border-textcolor bg-transparent text-lg p-2 px-6 hover:bg-white hover:border-white text-textcolor font-cormorant font-semibold">
-          <p>View Gallery</p>
-        </button>
+        <Link href="/gallery">
+          <button className="border-2  border-textcolor bg-transparent text-lg p-2 px-6 hover:bg-white hover:border-white text-textcolor font-cormorant font-semibold">
+            <p>View Gallery</p>
+          </button>
+        </Link>
       </div>
       <ShuffleGrid />
     </section>

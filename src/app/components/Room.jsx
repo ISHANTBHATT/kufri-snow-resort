@@ -38,7 +38,7 @@ export default function Room() {
           {rooms.map((room, index) => (
             <div key={index}>
               <div
-                className="bg-white overflow-hidden shadow-lg relative"
+                className="bg-white overflow-hidden shadow-lg relative group"
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
               >
@@ -47,7 +47,10 @@ export default function Room() {
                   alt={room.title}
                   width={400}
                   height={300}
-                  className="w-full h-72 object-cover"
+                  className="w-full h-72 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
+                  // className={`w-full h-72 object-cover transition-transform duration-500 ease-in-out ${
+                  //   hoveredIndex ? "scale-110" : "scale-100"
+                  // }`}
                 />
 
                 <div

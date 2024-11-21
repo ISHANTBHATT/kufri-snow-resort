@@ -1,7 +1,5 @@
 "use client";
-
 import React, { useEffect, useRef } from "react";
-
 export default function SnowfallEffect({
   snowflakeCount = 100,
   windSpeed = 0.5,

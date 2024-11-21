@@ -3,6 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
+  const menu = [
+    { id: 1, title: "Experiences", href: "/experiences" },
+    { id: 2, title: "Booking", href: "/booking" },
+    { id: 3, title: "Gallery", href: "/gallery" },
+    { id: 4, title: "About Us", href: "/about" },
+    { id: 5, title: "Contact", href: "/contact" },
+  ];
   return (
     <footer className="bg-textcolor text-white py-8">
       <div className="container mx-auto px-4">
@@ -19,20 +26,13 @@ export default function Footer() {
           <div className="col-span-1">
             <h3 className="text-xl font-semibold mb-4">Useful Menu</h3>
             <ul className="space-y-2">
-              {[
-                "Rooms & Suites",
-                "Experiences",
-                "Contact",
-                "About Us",
-                "Gallery",
-                "Terms & Policy",
-              ].map((item) => (
-                <li key={item}>
+              {menu.map((item) => (
+                <li key={item.id}>
                   <Link
-                    href="#"
+                    href={item.href}
                     className="hover:text-gray-300 transition duration-300"
                   >
-                    {item}
+                    {item.title}
                   </Link>
                 </li>
               ))}

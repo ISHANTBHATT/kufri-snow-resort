@@ -116,12 +116,12 @@
 // }
 
 "use client";
-
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { RiMenu2Line } from "react-icons/ri";
 import { LuShoppingCart } from "react-icons/lu";
 import { IoIosSearch } from "react-icons/io";
+import AnimatedMenu from "./AnimatedMenu";
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   useEffect(() => {
@@ -146,10 +146,10 @@ export default function Navbar() {
       <div className="relative z-20">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between py-4">
-            <button className="p-2 ">
+            {/* <button className="p-2 ">
               <RiMenu2Line className="h-6 w-6" />
-            </button>
-
+            </button> */}
+            <AnimatedMenu />
             {/* Navigation Links */}
             {/* <div className="hidden lg:flex space-x-6">
               <a href="#" className="text-lg font-medium hover:text-gray-500">
@@ -183,9 +183,11 @@ export default function Navbar() {
 
             {/* Right Side Navigation */}
             <div className="flex items-center gap-4">
-              <button className="hidden sm:inline-flex px-4 py-2 border-2 border-white hover:bg-white hover:text-textcolor rounded-lg">
-                Book Now
-              </button>
+              <Link href="/booking">
+                <button className="hidden sm:inline-flex px-4 py-2 border-2 border-white hover:bg-white hover:text-textcolor rounded-lg">
+                  Book Now
+                </button>
+              </Link>
               {/* <div className="relative">
                 <LuShoppingCart className="h-6 w-6 text-white" />
                 <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">
