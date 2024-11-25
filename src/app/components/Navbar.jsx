@@ -121,8 +121,10 @@ import Link from "next/link";
 import { RiMenu2Line } from "react-icons/ri";
 import { LuShoppingCart } from "react-icons/lu";
 import { IoIosSearch } from "react-icons/io";
+import { usePathname } from "next/navigation";
 import AnimatedMenu from "./AnimatedMenu";
 export default function Navbar() {
+  const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
@@ -137,10 +139,13 @@ export default function Navbar() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  const isHomePage = pathname === "/";
   return (
     <header
       className={`fixed w-full z-50 sm:px-6  font-cormorant  ${
-        isScrolled ? "bg-secondary text-textcolor" : "bg-transparent text-white"
+        isScrolled || !isHomePage
+          ? "bg-secondary text-textcolor"
+          : "bg-transparent text-white"
       }`}
     >
       <div className="relative z-20">
