@@ -164,7 +164,7 @@ function Homecontainer() {
             culture.
           </p>
           <p className="text-lg lg:text-xl py-4 md:py-8 font-medium pr-0 xl:pr-40">
-            Whether you're sipping hot cocoa by the fireplace or taking a
+            Whether you&apos;re sipping hot cocoa by the fireplace or taking a
             leisurely stroll through the surrounding pine forests, Kufri Snow
             View Resort promises an unforgettable experience in a winter
             wonderland.

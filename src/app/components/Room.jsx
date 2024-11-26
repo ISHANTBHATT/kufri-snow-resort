@@ -31,9 +31,9 @@ export default function Room() {
           ROOM & SUITES
         </h2>
         <h3 className="text-[#2D5470] text-center text-2xl md:text-3xl lg:text-4xl font-bold mb-12 max-w-4xl mx-auto leading-tight  font-cormorant">
-          Whether you're relaxing by the fireplace or sipping hot cocoa on the
-          balcony, the ambiance invites you to unwind and immerse yourself in
-          the natural beauty surrounding the resort.
+          Whether you&apos;re relaxing by the fireplace or sipping hot cocoa on
+          the balcony, the ambiance invites you to unwind and immerse yourself
+          in the natural beauty surrounding the resort.
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 px-10">
           {rooms.map((room, index) => (
