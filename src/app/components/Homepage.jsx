@@ -7,6 +7,7 @@ import Facilities from "./Facilities";
 import Gallery from "./Gallery";
 import Amenities from "./Amenities";
 import SwipeCards from "./SwipeCads";
+import Services from "./Services";
 
 function Homepage() {
   return (
@@ -16,6 +17,7 @@ function Homepage() {
       <Room />
       <Facilities />
       <Amenities />
+      <Services />
       <Gallery />
       {/* <SwipeCards /> */}
     </div>

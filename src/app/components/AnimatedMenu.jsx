@@ -273,9 +273,11 @@ export default function AnimatedMenu() {
               transition={{ delay: 0.5 }}
               className="flex flex-col-reverse text-textcolor gap-4"
             >
-              <IoLogoInstagram className="w-6 h-6 hover:text-textcolor/65" />
-              <FaFacebookSquare className="w-6 h-6 hover:text-textcolor/65" />
-              <FaYoutube className="w-6 h-6 hover:text-textcolor/65" />
+              {/* <IoLogoInstagram className="w-6 h-6 hover:text-textcolor/65" /> */}
+              <Link href="https://www.facebook.com/kufri" target="_blank">
+                <FaFacebookSquare className="w-8 h-8 hover:text-textcolor/65" />
+              </Link>
+              {/*<FaYoutube className="w-6 h-6 hover:text-textcolor/65" /> */}
             </motion.div>
             <div className="flex flex-col justify-center h-full">
               <nav className="space-y-10 text-7xl font-bold">

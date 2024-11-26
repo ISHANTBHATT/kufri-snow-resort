@@ -117,12 +117,14 @@ function Homecontainer() {
       ],
       title: "Experiences (Outdoor activities)",
       desc: "Lorem ipsum dolor sit amet consectetur. Diam mattis.",
+      href: "/experiences",
     },
     {
       id: 2,
       images: ["/images/seating.jpg", "/images/restaurant1.jpg"],
       title: "Meetings & Events",
       desc: "Be it Meetings, Reunions, Weddings, Conferences or any other Events, Kufri resort is the ideal choice.",
+      href: "/about",
     },
     {
       id: 3,
@@ -133,19 +135,21 @@ function Homecontainer() {
       ],
       title: "Fine Lunch Food",
       desc: "Taste authentic local cuisine at Kufri's restaurant, Flavour.",
+      href: "/gallery",
     },
   ];
 
   return (
     <div className="px-6 md:px-20 py-10 bg-secondary font-cormorant text-textcolor">
-      <p className="text-2xl md:text-3xl  lg:text-4xl text-center  font-medium">
-        From the moment you step foot on our grounds,
+      <p className="text-xl md:text-2xl  lg:text-3xl text-center lg:px-40  font-medium">
+        Kufri snow view resort is nestled in the picturesque hills of Kufri,
         <br className="hidden md:block" />
-        you&apos;ll be enveloped in a world of refined
+        offering a serene retreat for those seeking a getaway in nature&apos;s
+        embrace. With panoramic views of the snow-capped Himalayas,
         <br className="hidden md:block" />
-        elegance and warm hospitality.
+        the resort provides a perfect blend of comfort and natural beauty.
       </p>
-      <div className="flex flex-col md:flex-row justify-between items-center gap-4 mt-10 md:mt-20">
+      <div className="flex flex-col md:flex-row justify-between items-center gap-4 mt-4 md:mt-10">
         <div className="w-full md:w-1/2 flex justify-center">
           <img
             src="/images/outside.jpg"
@@ -153,15 +157,17 @@ function Homecontainer() {
             alt="Kufi Resort"
           />
         </div>
-        <div className="w-full md:w-1/2 mt-10 md:mt-0 py-10 md:py-20">
-          <p className="text-2xl lg:text-4xl text-left font-medium pr-0 xl:pr-40">
-            Taken from Javanese culture, they possess a meaning of peacefulness
-            and tranquility
+        <div className="w-full md:w-1/2 mt-10 md:mt-0 py-4 md:py-20">
+          <p className="text-xl lg:text-3xl text-left font-medium pr-0 xl:pr-40">
+            Guests can enjoy cozy accommodations, warm hospitality, and a range
+            of activities such as trekking, skiing, and exploring the local
+            culture.
           </p>
           <p className="text-lg lg:text-xl py-4 md:py-8 font-medium pr-0 xl:pr-40">
-            Experience true opulence in our meticulously designed
-            accommodations. Each room suite is tastefully furnished with a
-            harmonious blend of comfort, style, and sophistication.
+            Whether you're sipping hot cocoa by the fireplace or taking a
+            leisurely stroll through the surrounding pine forests, Kufri Snow
+            View Resort promises an unforgettable experience in a winter
+            wonderland.
           </p>
           <button className="border-2 border-textcolor bg-transparent text-lg p-2 px-6 hover:bg-white hover:border-white font-semibold">
             Learn More
@@ -169,12 +175,12 @@ function Homecontainer() {
         </div>
       </div>
       <section className="text-center mt-12">
-        <h2 className="text-2xl md:text-4xl mb-4 md:mb-8 font-medium">
-          Designed by the most creative minds in profession, built by
+        <h2 className="text-xl md:text-3xl mb-4 md:mb-8 font-medium">
+          We offer a cozy and comfortable retreat for guests seeking a serene
+          escape in the mountains.
           <br className="hidden md:block" />
-          the finest people in the industry, and we have finally begun
-          <br className="hidden md:block" />
-          our journey to serve you.
+          Each room is thoughtfully designed with warm interiors and large
+          windows that frame breathtaking views of the snow-capped peaks
         </h2>
       </section>
       <div className="flex flex-wrap gap-6 md:gap-10 justify-center lg:justify-between w-full mt-8">
@@ -184,6 +190,7 @@ function Homecontainer() {
             images={e.images}
             title={e.title}
             desc={e.desc}
+            href={e.href}
           />
         ))}
       </div>

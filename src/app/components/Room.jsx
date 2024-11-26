@@ -30,15 +30,16 @@ export default function Room() {
         <h2 className="text-[#F2994A] text-center text-xl font-semibold mb-6">
           ROOM & SUITES
         </h2>
-        <h3 className="text-[#2D5470] text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-12 max-w-4xl mx-auto leading-tight  font-cormorant">
-          Each suite is meticulously designed to offer the perfect blend of
-          comfort, elegance, and sophistication.
+        <h3 className="text-[#2D5470] text-center text-2xl md:text-3xl lg:text-4xl font-bold mb-12 max-w-4xl mx-auto leading-tight  font-cormorant">
+          Whether you're relaxing by the fireplace or sipping hot cocoa on the
+          balcony, the ambiance invites you to unwind and immerse yourself in
+          the natural beauty surrounding the resort.
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 px-10">
           {rooms.map((room, index) => (
             <div key={index}>
               <div
-                className="bg-white overflow-hidden shadow-lg relative group"
+                className="bg-white overflow-hidden shadow-lg relative group rounded-lg"
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
               >
@@ -47,7 +48,7 @@ export default function Room() {
                   alt={room.title}
                   width={400}
                   height={300}
-                  className="w-full h-72 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
+                  className="w-full h-72 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110 rounded-lg"
                   // className={`w-full h-72 object-cover transition-transform duration-500 ease-in-out ${
                   //   hoveredIndex ? "scale-110" : "scale-100"
                   // }`}

@@ -5,17 +5,16 @@ import { useEffect, useRef, useState } from "react";
 
 const Gallery = () => {
   return (
-    <section className="w-full px-8 py-12 grid grid-cols-1 md:grid-cols-2 items-center gap-8 mx-auto bg-secondary">
+    <section className="w-full px-8 py-12 grid grid-cols-1 md:grid-cols-2 items-center gap-8 mx-auto bg-secondary2">
       <div>
         <span className="block mb-4 text-xs md:text-sm text-[#F2994A] font-medium">
           Better every day
         </span>
-        <h3 className="text-4xl md:text-6xl font-semibold text-textcolor font-cormorant">
-          Let&apos;s change it up a bit
+        <h3 className="text-3xl md:text-5xl font-semibold text-textcolor font-cormorant">
+          With panoramic views of the snow-capped Himalayas,
         </h3>
         <p className="text-lg md:text-xl text-textcolor my-4 md:my-6 font-cormorant font-semibold">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam nobis in
-          error repellat voluptatibus ad.
+          the resort provides a perfect blend of comfort and natural beauty.
         </p>
         {/* <button className="bg-indigo-500 text-white font-medium py-2 px-4 rounded transition-all hover:bg-indigo-600 active:scale-95">
           Find a class

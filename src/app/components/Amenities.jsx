@@ -118,6 +118,7 @@ import {
   Clock,
   Shirt,
 } from "lucide-react";
+import { FaTemperatureHigh } from "react-icons/fa";
 
 function Amenities() {
   const amenities = [
@@ -131,38 +132,38 @@ function Amenities() {
     { icon: Parking, text: "Free Parking" },
     { icon: BedDouble, text: "Room Service" },
     { icon: Wifi, text: "Free Wi-Fi" },
-    { icon: Building2, text: "Business Center" },
     { icon: MapPin, text: "Great Location" },
     { icon: Car, text: "Travel Desk" },
     { icon: Wifi, text: "Complimentary Wi-Fi" },
-    { icon: Wifi, text: "Free Wi-Fi in the Room" },
+    { icon: FaTemperatureHigh, text: "Room Heater (On Availability)" },
     { icon: Utensils, text: "Complimentary Breakfast" },
-    { icon: Shirt, text: "Laundry Service" },
-    { icon: Clock, text: "24-hour Room Service" },
   ];
 
   return (
     <div className="px-4 md:px-10 lg:px-20 py-10 bg-secondary2 font-cormorant text-textcolor">
       <h2 className="text-center text-2xl md:text-3xl font-bold tracking-tight text-primary mb-6 md:mb-12">
-        HOTEL AMENITIES
+        RESORT AMENITIES
       </h2>
-      <p className="text-2xl md:text-3xl lg:text-4xl text-center font-medium mb-10">
-        From the moment you step foot on our grounds,
+      <p className="text-xl md:text-2xl  lg:text-3xl text-center lg:px-40 font-medium mb-10">
+        Kufri snow view resort is nestled in the picturesque hills of Kufri,
         <br className="hidden md:block" />
-        you&apos;ll be enveloped in a world of refined
+        offering a serene retreat for those seeking a getaway in nature&apos;s
+        embrace. With panoramic views of the snow-capped Himalayas,
         <br className="hidden md:block" />
-        elegance and warm hospitality.
+        the resort provides a perfect blend of comfort and natural beauty.
       </p>
       <div className="flex flex-col md:flex-row items-center justify-between mt-10">
-        <div className="w-full md:w-1/2 mt-10 md:mt-0 py-10">
-          <p className="text-lg md:text-2xl lg:text-4xl text-left font-medium pr-0 md:pr-20">
-            Taken from Javanese culture, they possess a meaning of peacefulness
-            and tranquility.
+        <div className="w-full md:w-1/2  py-10">
+          <p className="text-xl lg:text-3xl text-left font-medium pr-0 md:pr-20">
+            Guests can enjoy cozy accommodations, warm hospitality, and a range
+            of activities such as trekking, skiing, and exploring the local
+            culture.
           </p>
           <p className="text-sm md:text-lg lg:text-xl py-4 md:py-8 font-medium pr-0 md:pr-20">
-            Experience true opulence in our meticulously designed
-            accommodations. Each room suite is tastefully furnished with a
-            harmonious blend of comfort, style, and sophistication.
+            Whether you're sipping hot cocoa by the fireplace or taking a
+            leisurely stroll through the surrounding pine forests, Kufri Snow
+            View Resort promises an unforgettable experience in a winter
+            wonderland.
           </p>
           <button className="border-2 border-textcolor bg-transparent text-sm md:text-lg p-2 px-6 hover:bg-white hover:border-white font-semibold">
             Learn More

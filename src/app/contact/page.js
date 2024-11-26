@@ -68,6 +68,7 @@ import {
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function ContactPage() {
   return (
@@ -94,7 +95,7 @@ export default function ContactPage() {
             </p>
             <p className="flex items-center mb-2">
               <Mail className="mr-2" />
-              info@email.com
+              snowviewresort7@gmail.com
             </p>
             <p className="flex items-center mb-2">
               <Phone className="mr-2" />
@@ -110,15 +111,17 @@ export default function ContactPage() {
               Follow Us On Social Media
             </h2>
             <div className="flex space-x-4">
-              <Button variant="outline" className="p-2">
+              {/* <Button variant="outline" className="p-2">
                 <Instagram className="w-6 h-6" />
-              </Button>
-              <Button variant="outline" className="p-2">
-                <Facebook className="w-6 h-6" />
-              </Button>
-              <Button variant="outline" className="p-2">
+              </Button> */}
+              <Link href="https://www.facebook.com/kufri" target="_blank">
+                <Button variant="outline" className="p-2">
+                  <Facebook className="w-6 h-6" />
+                </Button>
+              </Link>
+              {/* <Button variant="outline" className="p-2">
                 <Youtube className="w-6 h-6" />
-              </Button>
+              </Button> */}
             </div>
           </div>
         </CardContent>

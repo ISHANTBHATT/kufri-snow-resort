@@ -1,7 +1,9 @@
 import Image from "next/image";
-import { FaSwimmingPool } from "react-icons/fa";
-import { GiDesk } from "react-icons/gi";
-import { FaHome } from "react-icons/fa";
+// import { FaSwimmingPool } from "react-icons/fa";
+// import { GiDesk } from "react-icons/gi";
+// import { FaHome } from "react-icons/fa";
+import { FaUtensils, FaBed, FaEllipsisH } from "react-icons/fa";
+import { MdHiking } from "react-icons/md";
 export default function Facilities() {
   return (
     <section className="py-16 bg-secondary">
@@ -10,31 +12,31 @@ export default function Facilities() {
           KUFRI SPECIALITY
         </h2>
         <h3 className="text-[#2D5470] text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-12 max-w-6xl mx-auto leading-tight font-cormorant">
-          We take pride in our attention to detail, personalized service, and
-          commitment to exceeding your expectations.
+          During winter, the area transforms into a snowy wonderland, attracting
+          tourists eager to indulge in skiing and other winter sports.
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {[
             {
-              icon: FaSwimmingPool,
-              title: "Infinity Pool",
+              icon: MdHiking,
+              title: "Outdoor Activities",
               description:
                 "Lorem ipsum dolor sit amet consectetur. Eget nibh nibh ut.",
             },
             {
-              icon: GiDesk,
-              title: "Coworking Space",
+              icon: FaUtensils,
+              title: "Fine Dining",
               description: "Lorem ipsum dolor sit amet consectetur. Intege",
             },
             {
-              icon: FaHome,
-              title: "Homy & Cozy Place",
+              icon: FaBed,
+              title: "Comfortable Rooms",
               description:
                 "Lorem ipsum dolor sit amet consectetur. Diam mattis.",
             },
             {
-              icon: FaSwimmingPool,
-              title: "Many Food Menus",
+              icon: FaEllipsisH,
+              title: "And Many More...",
               description: "Lorem ipsum dolor sit amet consectetur. Et augue.",
             },
           ].map((item, index) => (
