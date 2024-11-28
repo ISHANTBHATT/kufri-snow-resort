@@ -146,7 +146,7 @@ const content = [
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
         <Image
-          src="/images/NARKANDA.jpg"
+          src="/images/narkanda2.jpg"
           width={500}
           height={500}
           className="h-full w-full object-cover"
@@ -162,7 +162,7 @@ const content = [
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
         <Image
-          src="/images/DESHU-PEAK.png"
+          src="/images/deshu-temple.jpg"
           width={500}
           height={500}
           className="h-full w-full object-cover"

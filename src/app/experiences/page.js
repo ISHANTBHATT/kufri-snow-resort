@@ -49,53 +49,6 @@ const activities = [
   },
 ];
 
-// export default function KufriActivities() {
-//   const [mounted, setMounted] = useState(false);
-
-//   useEffect(() => {
-//     setMounted(true);
-//   }, []);
-
-//   if (!mounted) return null;
-
-//   return (
-//     <div className="py-20 bg-gray-100">
-//       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-//         <h2 className="text-5xl font-extrabold text-textcolor mb-8 text-center font-cormorant">
-//           Experiences
-//         </h2>
-//         {activities.map((activity, index) => (
-//           <motion.div
-//             key={activity.name}
-//             initial={{ opacity: 0, y: 50 }}
-//             animate={{ opacity: 1, y: 0 }}
-//             transition={{ duration: 0.5, delay: index * 0.1 }}
-//             className={`flex flex-col ${
-//               index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-//             } mb-16 items-center`}
-//           >
-//             <div className="md:w-1/2">
-//               <Image
-//                 src={activity.image}
-//                 alt={activity.name}
-//                 width={600}
-//                 height={400}
-//                 className="rounded-lg shadow-lg"
-//               />
-//             </div>
-//             <div className="md:w-1/2 mt-4 md:mt-0 md:px-8">
-//               <h3 className="text-2xl font-bold text-gray-900 mb-4">
-//                 {activity.name}
-//               </h3>
-//               <p className="text-gray-600">{activity.description}</p>
-//             </div>
-//           </motion.div>
-//         ))}
-//       </div>
-//     </div>
-//   );
-// }
-
 function ActivityItem({ activity, index }) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.5 });
@@ -150,7 +103,7 @@ function ActivityItem({ activity, index }) {
 
 export default function KufriActivities() {
   return (
-    <div className="py-24 bg-gray-100">
+    <div className="py-24  bg-secondary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-5xl font-extrabold text-textcolor mb-12 text-center font-cormorant">
           Activities in Kufri / Experiences

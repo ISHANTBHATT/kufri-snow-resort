@@ -3,16 +3,6 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-// const ImageGallery = ({ data }) => {
-//   return (
-//     <div className="flex flex-wrap gap-10 w-full justify-between">
-//       {data.map((e) => (
-//         <ImageHover key={e.id} images={e.images} title={e.title} desc={e.desc} />
-//       ))}
-//     </div>
-//   );
-// };
-
 const ImageHover = ({ images, title, desc, href }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);

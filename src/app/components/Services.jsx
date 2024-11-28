@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function CabBooking() {
   return (
-    <div className="min-h-screen bg-secondary p-4 md:p-6 lg:p-8">
+    <div className="h-full bg-secondary p-4 md:p-6 lg:p-8">
       <div className="mx-auto max-full">
         <h1 className="mb-8 text-center text-3xl font-semibold text-textcolor md:text-4xl font-cormorant">
           Cab Booking
@@ -49,7 +49,7 @@ export default function CabBooking() {
             {/* Image Section */}
             <div className="relative md:w-1/2">
               <img
-                src="/images/outdoor.jpg"
+                src="/images/cab.jpeg"
                 alt="Scenic view of a mountain resort"
                 className="h-full w-full object-cover rounded-lg"
               />

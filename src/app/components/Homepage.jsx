@@ -19,7 +19,6 @@ function Homepage() {
       <Amenities />
       <Services />
       <Gallery />
-      {/* <SwipeCards /> */}
     </div>
   );
 }

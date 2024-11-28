@@ -1,7 +1,4 @@
 import Image from "next/image";
-// import { FaSwimmingPool } from "react-icons/fa";
-// import { GiDesk } from "react-icons/gi";
-// import { FaHome } from "react-icons/fa";
 import { FaUtensils, FaBed, FaEllipsisH } from "react-icons/fa";
 import { MdHiking } from "react-icons/md";
 export default function Facilities() {
@@ -42,18 +39,8 @@ export default function Facilities() {
           ].map((item, index) => (
             <div
               key={index}
-              //   className={`p-6 rounded-lg ${
-              //     index === 0 ? "bg-[#2D5470] text-white" : "bg-white"
-              //   }`}
               className="p-6 py-20 rounded-lg bg-white hover:bg-textcolor hover:text-white text-textcolor text-center"
             >
-              {/* <Image
-                src={item.icon}
-                alt={item.title}
-                width={64}
-                height={64}
-                className="mb-4"
-              /> */}
               <div className="flex justify-center">
                 <item.icon className="w-16 h-16 mb-4 " />
               </div>
@@ -61,12 +48,7 @@ export default function Facilities() {
               <h4 className="text-2xl font-semibold mb-2 font-cormorant">
                 {item.title}
               </h4>
-              <p
-                //    className={index === 0 ? "text-gray-300" : "text-gray-600"}
-                className="font-medium"
-              >
-                {item.description}
-              </p>
+              <p className="font-medium">{item.description}</p>
             </div>
           ))}
         </div>
