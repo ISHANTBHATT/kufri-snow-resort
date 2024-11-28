@@ -1,73 +1,3 @@
-// import React from "react";
-// import { ScrollContent } from "../components/ScrollContent";
-// import Image from "next/image";
-
-// function Page() {
-//   return (
-//     <div className="py-28 space-y-16 px-10 text-textcolor">
-//       <div className=" flex gap-10 w-full h-full">
-//         <Image
-//           src="/images/outdoor.jpg"
-//           alt=""
-//           width={500}
-//           height={500}
-//           className="rounded-xl"
-//         />
-
-//         <div className="flex flex-col container justify-end gap-10">
-//           <p className="">
-//             Lorem Ipsum is simply dummy text of the printing and typesetting
-//             industry. Lorem Ipsum has been the industry's standard dummy text
-//             ever since the 1500s, when an unknown printer took a galley of type
-//             and scrambled it to make a type specimen book. It has survived not
-//             only five centuries, but also the leap into electronic typesetting,
-//             remaining essentially unchanged. It was popularised in the 1960s
-//             with the release of Letraset sheets containing Lorem Ipsum passages,
-//             and more recently with desktop publishing software like Aldus
-//             PageMaker including versions of Lorem Ipsum.
-//           </p>
-//           <p>
-//             Lorem Ipsum is simply dummy text of the printing and typesetting
-//             industry. Lorem Ipsum has been the industry's standard dummy text
-//             ever since the 1500s, when an unknown printer took a galley of type
-//             and scrambled it to make a type specimen book. It has survived not
-//             only five centuries, but also the leap into electronic typesetting,
-//             remaining essentially unchanged. It was popularised in the 1960s
-//             with the release of Letraset sheets containing Lorem Ipsum passages,
-//             and more recently with desktop publishing software like Aldus
-//             PageMaker including versions of Lorem Ipsum.
-//           </p>
-//         </div>
-//       </div>
-//       <div>
-//         <p>
-//           Lorem Ipsum is simply dummy text of the printing and typesetting
-//           industry. Lorem Ipsum has been the industry's standard dummy text ever
-//           since the 1500s, when an unknown printer took a galley of type and
-//           scrambled it to make a type specimen book. It has survived not only
-//           five centuries, but also the leap into electronic typesetting,
-//           remaining essentially unchanged. It was popularised in the 1960s with
-//           the release of Letraset sheets containing Lorem Ipsum passages, and
-//           more recently with desktop publishing software like Aldus PageMaker
-//           including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of
-//           the printing and typesetting industry. Lorem Ipsum has been the
-//           industry's standard dummy text ever since the 1500s, when an unknown
-//           printer took a galley of type and scrambled it to make a type specimen
-//           book. It has survived not only five centuries, but also the leap into
-//           electronic typesetting, remaining essentially unchanged. It was
-//           popularised in the 1960s with the release of Letraset sheets
-//           containing Lorem Ipsum passages, and more recently with desktop
-//           publishing software like Aldus PageMaker including versions of Lorem
-//           Ipsum.
-//         </p>
-//       </div>
-//       <ScrollContent />
-//     </div>
-//   );
-// }
-
-// export default Page;
-
 "use client";
 
 import React from "react";
@@ -175,19 +105,64 @@ const content = [
 
 export default function Page() {
   return (
+    // <div className="text-textcolor bg-secondary">
+    //   <div className="py-28 px-10 space-y-16">
+    //     <div className="flex gap-10 w-full h-full">
+    //       <Image
+    //         src="/images/outdoor.jpg"
+    //         alt=""
+    //         width={500}
+    //         height={500}
+    //         className="rounded-xl"
+    //       />
+
+    //       <div className="flex flex-col container justify-end gap-10">
+    //         <p>
+    //           Kufri is a charming hill station nestled in the Himalayan
+    //           foothills of the Indian state of Himachal Pradesh. Situated
+    //           approximately 20 kilometers from the bustling city of Shimla,
+    //           Kufri is renowned for its breathtaking landscapes, lush green
+    //           forests, and panoramic views of snow-capped peaks. This serene
+    //           destination, perched at an altitude of about 2,720 meters above
+    //           sea level, becomes a winter wonderland during the colder months,
+    //           attracting tourists for skiing and other snow-related activities.
+    //           Besides winter sports, Kufri is home to the Himalayan Nature Park,
+    //           where visitors can explore diverse flora and fauna native to the
+    //           region.
+    //         </p>
+    //         <p>
+    //           The park also provides a sanctuary for a variety of animals such
+    //           as the Himalayan Monal, the state bird of Himachal Pradesh. For
+    //           adventure enthusiasts, Kufri offers opportunities for trekking and
+    //           horse riding along scenic trails. A visit to Kufri is incomplete
+    //           without experiencing the vibrant local culture and sampling the
+    //           delicious Himachali cuisine, which adds a flavorful touch to this
+    //           picturesque retreat.
+    //         </p>
+    //       </div>
+    //     </div>
+    //   </div>
+    //   <div className="bg-secondary2 py-10">
+    //     <p className="font-cormorant font-semibold text-textcolor text-4xl text-center my-10">
+    //       PLACES TO VISIT AROUND KUFRI
+    //     </p>
+    //     <StickyScroll content={content} />
+    //   </div>
+    // </div>
     <div className="text-textcolor bg-secondary">
-      <div className="py-28 px-10 space-y-16">
-        <div className="flex gap-10 w-full h-full">
+      {/* Hero Section */}
+      <div className="py-28 px-4 md:px-10 space-y-16">
+        <div className="flex flex-col lg:flex-row gap-6 lg:gap-10 w-full h-full">
           <Image
             src="/images/outdoor.jpg"
             alt=""
             width={500}
             height={500}
-            className="rounded-xl"
+            className="rounded-xl w-full lg:w-[50%] object-cover"
           />
 
-          <div className="flex flex-col container justify-end gap-10">
-            <p>
+          <div className="flex flex-col justify-end container gap-6">
+            <p className="text-sm md:text-base">
               Kufri is a charming hill station nestled in the Himalayan
               foothills of the Indian state of Himachal Pradesh. Situated
               approximately 20 kilometers from the bustling city of Shimla,
@@ -200,7 +175,7 @@ export default function Page() {
               where visitors can explore diverse flora and fauna native to the
               region.
             </p>
-            <p>
+            <p className="text-sm md:text-base">
               The park also provides a sanctuary for a variety of animals such
               as the Himalayan Monal, the state bird of Himachal Pradesh. For
               adventure enthusiasts, Kufri offers opportunities for trekking and
@@ -211,34 +186,16 @@ export default function Page() {
             </p>
           </div>
         </div>
-        {/* <div>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry&apos;s standard dummy
-            text ever since the 1500s, when an unknown printer took a galley of
-            type and scrambled it to make a type specimen book. It has survived
-            not only five centuries, but also the leap into electronic
-            typesetting, remaining essentially unchanged. It was popularised in
-            the 1960s with the release of Letraset sheets containing Lorem Ipsum
-            passages, and more recently with desktop publishing software like
-            Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is
-            simply dummy text of the printing and typesetting industry. Lorem
-            Ipsum has been the industry&apos;s standard dummy text ever since
-            the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived not only
-            five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
-          </p>
-        </div> */}
       </div>
+
+      {/* Places to Visit Section */}
       <div className="bg-secondary2 py-10">
-        <p className="font-cormorant font-semibold text-textcolor text-4xl text-center my-10">
+        <p className="font-cormorant font-semibold text-textcolor text-2xl md:text-4xl text-center my-6 md:my-10">
           PLACES TO VISIT AROUND KUFRI
         </p>
-        <StickyScroll content={content} />
+        <div className="px-4 md:px-10">
+          <StickyScroll content={content} />
+        </div>
       </div>
     </div>
   );
