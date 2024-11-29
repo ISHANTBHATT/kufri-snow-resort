@@ -19,6 +19,7 @@ import {
   Shirt,
 } from "lucide-react";
 import { FaTemperatureHigh } from "react-icons/fa";
+import Link from "next/link";
 
 function Amenities() {
   const amenities = [
@@ -65,9 +66,11 @@ function Amenities() {
             View Resort promises an unforgettable experience in a winter
             wonderland.
           </p>
-          <button className="border-2 border-textcolor bg-transparent text-sm md:text-lg p-2 px-6 hover:bg-white hover:border-white font-semibold">
-            Learn More
-          </button>
+          <Link href="/booking">
+            <button className="border-2 border-textcolor bg-transparent text-sm md:text-lg p-2 px-6 hover:bg-white hover:border-white font-semibold">
+              Learn More
+            </button>
+          </Link>
         </div>
         <div className="w-full md:w-1/2 flex justify-center mt-10 md:mt-0">
           <SwipeCards />
