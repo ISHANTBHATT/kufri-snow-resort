@@ -43,11 +43,11 @@ export default function ContactPage() {
             </p>
             <p className="flex items-center mb-2">
               <Phone className="mr-2" />
-              Reservation: +91 9999999999 | +91 9999999999
+              Reservation: +91 7807710155
             </p>
             <p className="flex items-center">
               <Phone className="mr-2" />
-              Manager: +91 9999999999
+              Manager: +91 7807710155
             </p>
           </div>
           <div>

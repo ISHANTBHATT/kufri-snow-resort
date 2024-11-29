@@ -14,7 +14,7 @@ const Gallery = () => {
           With panoramic views of the snow-capped Himalayas,
         </h3>
         <p className="text-lg md:text-xl text-textcolor my-4 md:my-6 font-cormorant font-semibold">
-          the resort provides a perfect blend of comfort and natural beauty.
+          The resort provides a perfect blend of comfort and natural beauty.
         </p>
         {/* <button className="bg-indigo-500 text-white font-medium py-2 px-4 rounded transition-all hover:bg-indigo-600 active:scale-95">
           Find a class

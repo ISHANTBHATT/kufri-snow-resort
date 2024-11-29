@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import ImageHover from "./ImageHover";
+import Link from "next/link";
 
 function Homecontainer() {
   const data = [
@@ -67,9 +68,11 @@ function Homecontainer() {
             View Resort promises an unforgettable experience in a winter
             wonderland.
           </p>
-          <button className="border-2 border-textcolor bg-transparent text-lg p-2 px-6 hover:bg-white hover:border-white font-semibold">
-            Learn More
-          </button>
+          <Link href="/contact">
+            <button className="border-2 border-textcolor bg-transparent text-lg p-2 px-6 hover:bg-white hover:border-white font-semibold">
+              Learn More
+            </button>
+          </Link>
         </div>
       </div>
       <section className="text-center mt-12">

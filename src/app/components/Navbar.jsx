@@ -36,16 +36,17 @@ export default function Navbar() {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between py-4">
             <AnimatedMenu />
-            <div className="flex items-center gap-2 absolute right-[40%] sm:right-[45%] -top-2 sm:top-2">
-              <Image
-                src="/images/Kufri-Logo.png"
-                alt="logo"
-                width={100}
-                height={100}
-                className=""
-              />
-            </div>
-
+            <Link href="/">
+              <div className="flex items-center gap-2 absolute right-[40%] sm:right-[45%] -top-2 sm:top-2">
+                <Image
+                  src="/images/Kufri-Logo.png"
+                  alt="logo"
+                  width={100}
+                  height={100}
+                  className=""
+                />
+              </div>
+            </Link>
             <div className="flex items-center gap-4">
               <Link href="/booking">
                 <button className="hidden sm:inline-flex px-4 py-2 border-2 border-white hover:bg-white hover:text-textcolor rounded-lg">

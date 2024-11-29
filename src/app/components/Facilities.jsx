@@ -18,23 +18,24 @@ export default function Facilities() {
               icon: MdHiking,
               title: "Outdoor Activities",
               description:
-                "Lorem ipsum dolor sit amet consectetur. Eget nibh nibh ut.",
+                "Kufri offers breathtaking landscapes and thrilling experiences.",
             },
             {
               icon: FaUtensils,
               title: "Fine Dining",
-              description: "Lorem ipsum dolor sit amet consectetur. Intege",
+              description:
+                "Our restaurant offer stunning views of snow-capped mountains.",
             },
             {
               icon: FaBed,
               title: "Comfortable Rooms",
-              description:
-                "Lorem ipsum dolor sit amet consectetur. Diam mattis.",
+              description: "Enjoy cozy accommodations and warm hospitality.",
             },
             {
               icon: FaEllipsisH,
               title: "And Many More...",
-              description: "Lorem ipsum dolor sit amet consectetur. Et augue.",
+              description:
+                "No matter the season, Kufri promises a memorable experience for all who visit.",
             },
           ].map((item, index) => (
             <div
