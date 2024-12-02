@@ -280,7 +280,7 @@ export default function BookingForm() {
   }
 
   return (
-    <div className="py-20 px-4 flex flex-col md:flex-row justify-center items-start gap-8">
+    <div className="py-32 px-4 flex flex-col md:flex-row justify-center items-start gap-8">
       <Card className="w-full max-w-md">
         <CardHeader>
           <CardTitle className="text-2xl">Guest Details</CardTitle>

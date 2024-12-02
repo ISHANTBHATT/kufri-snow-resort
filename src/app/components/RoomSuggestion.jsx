@@ -6,6 +6,11 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Bed, Wifi, Coffee, Images } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { GiWindow } from "react-icons/gi";
+import { MdBalcony } from "react-icons/md";
+import { Heater } from "lucide-react";
+import { MountainSnow } from "lucide-react";
+import { FaMountain } from "react-icons/fa6";
 import {
   Carousel,
   CarouselContent,
@@ -18,81 +23,111 @@ import Link from "next/link";
 const rooms = [
   {
     title: "Deluxe Suite",
-    image: "/images/room.jpg",
-    images: ["/images/room.jpg", "/images/room1.jpg"],
+    image: "/images/room7.jpg",
+    images: ["/images/room7.jpg", "/images/room8.jpg"],
     bedType: "1 King bed",
-    area: "75 sq m",
     description:
       "A cozy room with stunning mountain views. Wake up to peaceful mountain scenery",
     rates: [
       {
         name: "Suite Stays",
-        price: 22000,
+        price: "2200 (CP) 2pax",
         amenities: [
-          "Accommodation in a suite",
+          "Room Heater (as per availability)",
           "Daily breakfast",
           "Internet access",
+          "Extra bed: 700rs",
         ],
       },
+    ],
+    notinclued: [
       {
-        name: "Best Available Rate (Suites)",
-        price: 75000,
-        amenities: ["Accommodation", "Daily breakfast", "Internet access"],
+        title: "Whats Not Included",
+        icon: <GiWindow className="h-6 w-6 text-muted-foreground" />,
+        amenities: ["No windows,", "No Balcony"],
       },
     ],
   },
   {
-    title: "Premier Room",
-    image: "/images/room2.jpg",
-    images: ["/images/room2.jpg", "/images/room3.jpg"],
-    bedType: "Twin Bed",
-    area: "42 sq m",
+    title: "Standard Room",
+    image: "/images/room.jpg",
+    images: ["/images/room.jpg", "/images/room1.jpg"],
+    bedType: "1 King bed",
+    description:
+      "A cozy room with stunning mountain views. Wake up to peaceful mountain scenery",
+    rates: [
+      {
+        name: "Suite Stays",
+        price: "2599 (CP) 2pax",
+        amenities: [
+          "Room Heater (as per availability)",
+          "Daily breakfast",
+          "Internet access",
+          "Extra bed: 700rs",
+          "Valley Facing Window View",
+        ],
+      },
+    ],
+    notinclued: [
+      {
+        title: "Whats Not Included",
+        icon: <MdBalcony className="h-6 w-6 text-muted-foreground" />,
+        amenities: ["No Balcony"],
+      },
+    ],
+  },
+  {
+    title: "Superior Room",
+    image: "/images/room5.jpg",
+    images: ["/images/room4.jpg", "/images/room5.jpg"],
+    bedType: "1 King bed",
     description:
       "With specially crafted furnishings, a marble ensuite bathroom, summit views and twin beds.",
     rates: [
       {
-        name: "Room Only Rate",
-        price: 85000,
-        amenities: ["Accommodation", "Internet access"],
-      },
-      {
-        name: "Room and Breakfast Rate",
-        price: 87000,
-        amenities: ["Accommodation", "Daily breakfast", "Internet access"],
-      },
-      {
-        name: "Taste of Luxury",
-        price: 90000,
+        name: "Suite Stays",
+        price: "2999 (CP) 2pax",
         amenities: [
-          "Accommodation",
+          "Room Heater (as per availability)",
           "Daily breakfast",
-          "One major meal for two (lunch or dinner)",
+          "Internet access",
+          "Extra bed: 700rs",
+          "With Balcony",
         ],
+      },
+    ],
+    notinclued: [
+      {
+        title: "",
+        amenities: [""],
       },
     ],
   },
   {
-    title: "Luxury Suite",
-    image: "/images/room4.jpg",
-    images: ["/images/room4.jpg", "/images/room5.jpg"],
-    bedType: "1 King bed",
-    area: "185 sq m",
+    title: "Family Suite",
+    image: "/images/room9.jpg",
+    images: ["/images/room2.jpg", "/images/room3.jpg", "/images/room9.jpg"],
+    bedType: "2 King bed",
     description:
       "Features an octagonal glass shower and a private sun terrace. Enjoy the beauty of mountains from your window.",
     rates: [
       {
         name: "Suite Stays",
-        price: 57000,
+        price: "6999 (CP) 4 pax",
         amenities: [
-          "Accommodation in a suite",
+          "Room Heater (as per availability)",
           "Daily breakfast",
           "Internet access",
+          "Extra bed: 700rs",
+          "Valley View",
         ],
       },
+    ],
+    notinclued: [
       {
-        name: "Best Available Rate (Suites)",
-        price: 30000,
-        amenities: ["Accommodation", "Daily breakfast", "Internet access"],
+        title: "Whats Not Included",
+        icon: <MdBalcony className="h-6 w-6 text-muted-foreground" />,
+        amenities: ["No Balcony"],
       },
     ],
   },
@@ -133,21 +168,17 @@ export default function RoomSuggestion({ handlebooking }) {
                     <Bed className="h-4 w-4" />
                     {room.bedType}
                   </div>
-                  <div>{room.area}</div>
                 </div>
-                <p className="text-base">{room.description}</p>
+                {/* <p className="text-base">{room.description}</p> */}
               </CardHeader>
               <CardContent className="space-y-6">
                 {room.rates.map((rate, rateIndex) => (
-                  <div
-                    key={rateIndex}
-                    className="border-t pt-6 first:border-t-0 first:pt-0"
-                  >
+                  <div key={rateIndex} className="">
                     <div className="flex justify-between items-start mb-4">
                       <h3 className="font-medium">{rate.name}</h3>
                       <div className="text-right">
                         <div className="text-2xl font-bold">
-                          ₹{rate.price.toLocaleString()}
+                          {/* ₹{rate.price.toLocaleString()} */}₹{rate.price}
                         </div>
                         <div className="text-sm text-muted-foreground">
                           Per Night
@@ -168,8 +199,12 @@ export default function RoomSuggestion({ handlebooking }) {
                           ) : amenity.includes("breakfast") ||
                             amenity.includes("meal") ? (
                             <Coffee className="h-4 w-4 text-muted-foreground" />
-                          ) : (
+                          ) : amenity.includes("bed") ? (
                             <Bed className="h-4 w-4 text-muted-foreground" />
+                          ) : amenity.includes("Heater") ? (
+                            <Heater className="h-4 w-4 text-muted-foreground" />
+                          ) : (
+                            <FaMountain className="h-4 w-4 text-muted-foreground" />
                           )}
                           {amenity}
                         </li>
@@ -185,6 +220,26 @@ export default function RoomSuggestion({ handlebooking }) {
                         </Button>
                       </Link>
                     </div>
+                  </div>
+                ))}
+              </CardContent>
+              <CardContent className="space-y-6">
+                {room.notinclued.map((item, itemIndex) => (
+                  <div key={itemIndex} className="border-t pt-6">
+                    <div className="flex justify-between items-start mb-4">
+                      <h3 className="font-medium">{item.title}</h3>
+                    </div>
+                    <ul className="gap-2 mb-4 flex items-center">
+                      {item.icon}
+                      {item.amenities.map((amenity, amenityIndex) => (
+                        <li
+                          key={amenityIndex}
+                          className="flex items-center gap-2 text-sm"
+                        >
+                          {amenity}
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 ))}
               </CardContent>
